@@ -32,3 +32,22 @@
 //     return false;
 //   }
 // };
+
+//https:leetcode.com/problems/merge-sorted-array/
+// var merge = function (nums1, m, nums2, n) {
+//   let arr = [];
+//   for (let k = 0; k < nums1.length; k++) {
+//     if (nums1[k] !== 0) {
+//       arr.push(nums1[k]);
+//     } else if (
+//       (nums1[k] !== m && nums1[k] !== 0) ||
+//       (nums1[k] !== n && nums1[k] !== 0)
+//     ) {
+//       arr.push(nums1[k]);
+//     }
+//   }
+//   return arr.concat(nums2).sort();
+// };
+
+// console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+// console.log(merge([1, 2, 3, 0, 0, 0], 4, [2, 5, 6], 4));
