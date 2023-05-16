@@ -49,14 +49,43 @@
 //   return arr.concat(nums2).sort();
 // };
 
-var countKDifference = function (nums, k) {
-  let count = 0;
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = 0; j < nums.length; j++) {
-      if (nums[i] - nums[j] == k) {
-        count = count + 1;
+// var countKDifference = function (nums, k) {
+//   let count = 0;
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = 0; j < nums.length; j++) {
+//       if (nums[i] - nums[j] == k) {
+//         count = count + 1;
+//       }
+//     }
+//   }
+//   return count;
+// };
+
+var removeDuplicates = function (nums) {
+  let arr = nums.sort();
+  let newArr = [];
+  for (let j = 0; j < arr.length; j++) {
+    let check = false;
+    for (let i = 0; i < newArr.length; i++) {
+      if (arr[j] === newArr[i]) {
+        check = true;
+        break;
       }
     }
+    if (!check) {
+      newArr.push(arr[j]);
+    }
   }
-  return count;
+  let length = newArr.length;
+
+  let word = "_";
+
+  let fin = [];
+  fin.push(...newArr);
+  fin.push(word);
+
+  console.log(fin);
 };
+
+console.log(removeDuplicates([1, 1, 1, 2, 1]));
+console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
