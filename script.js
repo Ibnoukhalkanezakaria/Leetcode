@@ -63,18 +63,18 @@
 
 //https:leetcode.com/problems/remove-duplicates-from-sorted-array/
 
-var removeDuplicates = function (nums) {
-  if (nums.length === 0) {
-    return 0;
-  }
-  let index = 1;
+// var removeDuplicates = function (nums) {
+//   if (nums.length === 0) {
+//     return 0;
+//   }
+//   let index = 1;
 
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] !== nums[i - 1]) {
-      nums[index] = nums[i];
-      index++;
-    }
-  }
+//   for (let i = 1; i < nums.length; i++) {
+//     if (nums[i] !== nums[i - 1]) {
+//       nums[index] = nums[i];
+//       index++;
+//     }
+//   }
 
-  return index;
-};
+//   return index;
+// };
