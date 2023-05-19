@@ -78,3 +78,35 @@
 
 //   return index;
 // };
+
+//https:leetcode.com/problems/palindrome-number/
+// var isPalindrome = function (x) {
+//   let arr = x.toString().split("");
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr.reverse().join("") == x) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// };
+
+// https://leetcode.com/problems/length-of-last-word/
+// var lengthOfLastWord = function (s) {
+//   let empty = [""];
+//   let arr = s.split(" ");
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let check = empty.indexOf(arr[i]);
+//     if (check == -1) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr.pop().length;
+// };
+
+// https://leetcode.com/problems/roman-to-integer/
+// https://leetcode.com/problems/longest-common-prefix/
+// https://leetcode.com/problems/median-of-two-sorted-arrays/
+// https:leetcode.com/problems/valid-parentheses/
+// https://leetcode.com/problems/plus-one/
