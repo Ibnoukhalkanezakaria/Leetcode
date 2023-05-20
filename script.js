@@ -105,8 +105,20 @@
 //   return newArr.pop().length;
 // };
 
-// https://leetcode.com/problems/roman-to-integer/
-// https://leetcode.com/problems/longest-common-prefix/
-// https://leetcode.com/problems/median-of-two-sorted-arrays/
-// https:leetcode.com/problems/valid-parentheses/
-// https://leetcode.com/problems/plus-one/
+// https://leetcode.com/problems/single-number/
+// var singleNumber = function (nums) {
+//   let newArr = [];
+//   for (let i = 0; i < nums.length; i++) {
+//     let check = true;
+//     for (let j = 0; j < nums.length; j++) {
+//       if (i !== j && nums[i] == nums[j]) {
+//         check = false;
+//         break;
+//       }
+//     }
+//     if (check) {
+//       newArr.push(nums[i]);
+//     }
+//   }
+//   return newArr;
+// };
