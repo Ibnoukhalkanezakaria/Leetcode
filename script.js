@@ -122,3 +122,14 @@
 //   }
 //   return newArr;
 // };
+
+// https://leetcode.com/problems/sort-colors/
+// var sortColors = function (nums) {
+//   return nums.sort();
+// };
+
+// var getConcatenation = function (nums) {
+//   return nums.concat(nums);
+// };
+
+// https://leetcode.com/problems/add-two-numbers/
