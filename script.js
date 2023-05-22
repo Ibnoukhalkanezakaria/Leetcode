@@ -132,4 +132,35 @@
 //   return nums.concat(nums);
 // };
 
-// https://leetcode.com/problems/add-two-numbers/
+// var twoSum = function (nums, target) {
+//   let newArr = [];
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = 0; j < nums.length; j++) {
+//       if (nums[i] + nums[j] == target && i != j) {
+//         newArr.push(i, j);
+//         return newArr;
+//       }
+//     }
+//   }
+// };
+
+// https://leetcode.com/problems/missing-number/
+// var missingNumber = function (nums) {
+//   let min = Math.min(...nums);
+//   let max = nums.length;
+//   let arr = nums.sort();
+//   let newArr = [];
+//   let newArr2 = [];
+//   for (let j = min; j <= max; j++) {
+//     newArr.push(j);
+//   }
+//   for (let i = 0; i <= arr.length; i++) {
+//     for (let k = 0; k <= newArr.length; k++) {
+//       let check = arr.indexOf(newArr[k]);
+//       if (check == -1) {
+//         newArr2.push(newArr[k]);
+//         return +newArr2;
+//       }
+//     }
+//   }
+// };
